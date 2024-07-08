@@ -123,7 +123,7 @@ html, body{
 }
 
 .hero{
-    padding: 64px 0px 65px;
+    padding: 56px 0px 65px;
     background-color: var(--primary-background);
 }
 
@@ -134,12 +134,12 @@ html, body{
 
 .media-block{
     position: relative;
-    height: 685px;
 }
 
 .hero-image{
     width: 470px;
     border-radius: 20px;
+    vertical-align: bottom;
 }
 
 .hero-summary{
