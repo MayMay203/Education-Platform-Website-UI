@@ -3,6 +3,8 @@ const liElements = navElement.querySelectorAll('li')
 const body = document.querySelector('body')
 const stickyHeader = document.querySelector('.header.fixed');
 const btnSignUp = document.querySelector('.btn-signup')
+// const dots = document.querySelectorAll('.dot')
+
 for (let li of liElements) {
     li.addEventListener('click', (e) => {
         liElements.forEach(li => li.classList.remove('active'))
@@ -24,4 +26,11 @@ function updateHeaderTopDistance() {
     }
 }
 window.addEventListener('scroll', updateHeaderTopDistance);
+
+// dots.forEach((dot, index) => {
+//     dot.addEventListener('click', (e) => {
+//         e.target.style.transform = `translateX(${-index * 100}%)`; // Added semicolon here
+//         console.log(e.target)
+//     })
+// })
 

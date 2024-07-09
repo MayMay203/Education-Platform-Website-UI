@@ -9,6 +9,7 @@
     --text-color: #5F5B53;
     --primary-color:#FFB900;
     --heading-font:"Sen", "sans-serif";
+    --brown-color: #2E2100;
 }
 
 html{
@@ -447,9 +448,154 @@ html, body{
     background-color: var(--primary-color);
 }
 
+.feedback{
+    margin-top: 200px;
+    padding: 96px 0;
+    background-color: var(--brown-color);
+}
 
+.feedback-list{
+    display: flex;
+    overflow: hidden;
+}
 
+.feedback-item{
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    transform: translateX(-100%);
+    transition: all ease 0.3s; 
+}
 
+.feedback-item .feedback-info .avatar{
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feedback-item .feedback-info .title{
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-family: var(--heading-font);
+    font-size:2.4rem;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.feedback-item .feedback-info .desc{
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px
+}
+.feedback-item .dots{
+    display: flex;
+    margin-top: 28px;
+    gap: 6px;
+}
+.feedback-item .dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #634700;
+}
+
+.feedback-item .dot.active{
+    background-color: var(--primary-color);
+    cursor: default;
+}
+
+.feedback-item .content{
+    width: 66%;
+}
+
+.feedback-item blockquote {
+    color: var(--white);
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.features{
+    margin-top: 200px;
+}
+
+.features .body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-images{
+    display: flex;
+    gap: 0 30px;
+}
+
+.feature-images .image{
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.feature-images > .image + .image{
+    height: 405px;
+}
+
+.feature-images .image.lower{
+    margin-top: 34px;
+}
+
+.feat-sign-up{
+    background-color: var(--primary-color);
+    min-width: 137px;
+    border: none
+}
+
+.features .content{
+    width: 40%;
+}
+
+.features .content .title{
+    color: var(--heading-color);
+    font-family: Sen;
+    font-size:3.8rem;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.76px;
+}
+
+.features .desc{
+    margin-top: 16px;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px
+}
+
+.features .action{
+    margin-top: 32px;
+}
+
+.features-2nd .body{
+    flex-direction: row-reverse;
+}
+
+.features-2nd .content{
+    width: 49%;
+}
+
+.features-2nd .feature-images .image{
+    width: 470px;
+    height: 440px;
+    border-radius: 20px;
+}
 
 
 
